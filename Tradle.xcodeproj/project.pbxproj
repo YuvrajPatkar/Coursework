@@ -14,6 +14,10 @@
 		63BB1E8B2C8B3BBE008C3D20 /* TradleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1E8A2C8B3BBE008C3D20 /* TradleTests.swift */; };
 		63BB1E952C8B3BBE008C3D20 /* TradleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1E942C8B3BBE008C3D20 /* TradleUITests.swift */; };
 		63BB1E972C8B3BBE008C3D20 /* TradleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1E962C8B3BBE008C3D20 /* TradleUITestsLaunchTests.swift */; };
+		63BB1EA42C8B4551008C3D20 /* Home Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1EA32C8B4551008C3D20 /* Home Screen.swift */; };
+		63BB1EA62C8B4734008C3D20 /* Portfolio Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1EA52C8B4734008C3D20 /* Portfolio Screen.swift */; };
+		63BB1EAB2C8B48DD008C3D20 /* History Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */; };
+		63BB1EAF2C8B4902008C3D20 /* Exchange Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		63BB1E902C8B3BBE008C3D20 /* TradleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BB1E942C8B3BBE008C3D20 /* TradleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradleUITests.swift; sourceTree = "<group>"; };
 		63BB1E962C8B3BBE008C3D20 /* TradleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		63BB1EA32C8B4551008C3D20 /* Home Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home Screen.swift"; sourceTree = "<group>"; };
+		63BB1EA52C8B4734008C3D20 /* Portfolio Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Portfolio Screen.swift"; sourceTree = "<group>"; };
+		63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History Screen.swift"; sourceTree = "<group>"; };
+		63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exchange Screen.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,10 @@
 				63BB1E7B2C8B3BBC008C3D20 /* ContentView.swift */,
 				63BB1E7D2C8B3BBE008C3D20 /* Assets.xcassets */,
 				63BB1E7F2C8B3BBE008C3D20 /* Preview Content */,
+				63BB1EA32C8B4551008C3D20 /* Home Screen.swift */,
+				63BB1EA52C8B4734008C3D20 /* Portfolio Screen.swift */,
+				63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */,
+				63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */,
 			);
 			path = Tradle;
 			sourceTree = "<group>";
@@ -259,6 +271,10 @@
 			files = (
 				63BB1E7C2C8B3BBC008C3D20 /* ContentView.swift in Sources */,
 				63BB1E7A2C8B3BBC008C3D20 /* TradleApp.swift in Sources */,
+				63BB1EA42C8B4551008C3D20 /* Home Screen.swift in Sources */,
+				63BB1EAB2C8B48DD008C3D20 /* History Screen.swift in Sources */,
+				63BB1EA62C8B4734008C3D20 /* Portfolio Screen.swift in Sources */,
+				63BB1EAF2C8B4902008C3D20 /* Exchange Screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

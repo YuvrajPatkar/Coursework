@@ -9,13 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack{
+            TabView {
+                Home_Screen()
+                    .tabItem {
+                        Label("Home", systemImage: "macpro.gen2")
+                    }
+                
+                Portfolio_Screen()
+                    .tabItem {
+                        Label("Portfolio", systemImage: "toilet")
+                    }
+                Exchange_Screen()
+                    .tabItem {
+                        Label("Exchange", systemImage: "ferry.fill")
+                    }
+                History_Screen()
+                    .tabItem {
+                        Label("History", systemImage: "ivfluid.bag")
+                    }
+            }
         }
-        .padding()
+        
     }
 }
 
