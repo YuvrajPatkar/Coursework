@@ -15,7 +15,6 @@ struct ContentView: View {
                     .tabItem {
                         Label("Home", systemImage: "macpro.gen2")
                     }
-                
                 Portfolio_Screen()
                     .tabItem {
                         Label("Portfolio", systemImage: "toilet")

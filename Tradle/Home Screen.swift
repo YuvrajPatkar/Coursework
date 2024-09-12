@@ -10,11 +10,22 @@ import SwiftUI
 
 
 struct Home_Screen: View {
+    
+    @State private var showingNewOrderPage = false
+    
     var body: some View {
-        Text("Alpha")
+        Section {
+            Button("New Order") {
+                showingNewOrderPage.toggle()
+            }
+            .sheet(isPresented: $showingNewOrderPage) {
+                Button("Confirm Order") {
+                    showingNewOrderPage.toggle()
+                }
+            }
+        }
     }
 }
-
 #Preview {
     Home_Screen()
 }
