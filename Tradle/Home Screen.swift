@@ -12,15 +12,25 @@ import SwiftUI
 struct Home_Screen: View {
     
     @State private var showingNewOrderPage = false
+    @State private var StockEntered: String = ""
+    
     
     var body: some View {
-        Section {
-            Button("New Order") {
-                showingNewOrderPage.toggle()
-            }
-            .sheet(isPresented: $showingNewOrderPage) {
-                Button("Confirm Order") {
+        VStack{
+            Section {
+                Button("New Order") {
                     showingNewOrderPage.toggle()
+                }
+                .sheet(isPresented: $showingNewOrderPage) {
+                    Section {
+                        Form{
+                            TextField("Enter Stock Name", text: $StockEntered)
+                            
+                        }
+                    }
+                    Button("Confirm Order") {
+                        showingNewOrderPage.toggle()
+                    }
                 }
             }
         }
