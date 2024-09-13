@@ -24,7 +24,7 @@ struct Home_Screen: View {
                 .sheet(isPresented: $showingNewOrderPage) {
                     Section {
                         Form{
-                            TextField("Enter Stock Name", text: $StockEntered)
+                            TextField("remove Stock Name", text: $StockEntered)
                             
                         }
                     }
