@@ -8,12 +8,14 @@
 import Foundation
 
 
-class portfolio {
-    var Value: Int
+class Portfolio: ObservableObject {
     
-    init(Value: Int) {
-        self.Value = Value
-    }
+    static let shared = Portfolio()
+    
+    var value: Int = 100000
+    
+    
+    private init() {}
     
 }
 

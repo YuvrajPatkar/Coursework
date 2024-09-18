@@ -17,10 +17,16 @@ struct Home_Screen: View {
     
     var body: some View {
         VStack{
+//            Section {
+//                Text("\(Portfolio.shared.value)")
+//            }
             Section {
+                Text("Total Portfolio Value is \(Portfolio.shared.value)")
+                
                 Button("New Order") {
                     showingNewOrderPage.toggle()
                 }
+                .padding(100.0)
                 .sheet(isPresented: $showingNewOrderPage) {
                     Section {
                         Form{
