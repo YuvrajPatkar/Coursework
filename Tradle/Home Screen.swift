@@ -23,6 +23,8 @@ struct Home_Screen: View {
             Section {
                 Text("Total Portfolio Value is \(Portfolio.shared.value)")
                 
+                Text("Hello")
+                
                 Button("New Order") {
                     showingNewOrderPage.toggle()
                 }
