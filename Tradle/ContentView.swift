@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var showAlert: Bool = false
+    
     var body: some View {
         NavigationStack{
             TabView {
@@ -28,6 +31,15 @@ struct ContentView: View {
                         Label("History", systemImage: "ivfluid.bag")
                     }
             }
+        }
+        .onAppear{
+            self.showAlert = true
+        }
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("Welcome To Tradle"),
+                  message: Text("Disclaimer: This is a mock trading app. There is no use of real money all positions are on paper."),
+                  dismissButton: .default(Text("I Understand"))
+            )
         }
         
     }

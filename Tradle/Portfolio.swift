@@ -12,7 +12,14 @@ class Portfolio: ObservableObject {
     
     static let shared = Portfolio()
     
-    var value: Int = 100000
+    var totalCash: Double = 100000
+    var portfolioValue: String {
+        let portval = totalCash + totalEquity
+        // rounding the portfolio to two decimal places
+        let formattedPortval = String(format: "%.2f", portval)
+        return formattedPortval
+    }
+    var totalEquity: Double = 0
     
     
     private init() {}

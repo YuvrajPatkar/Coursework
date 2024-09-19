@@ -13,30 +13,31 @@ struct Home_Screen: View {
     
     @State private var showingNewOrderPage = false
     @State private var StockEntered: String = ""
+    @State private var QuantityBought: String = ""
+    
     
     
     var body: some View {
         VStack{
-//            Section {
-//                Text("\(Portfolio.shared.value)")
-//            }
+            Spacer()
             Section {
-                Text("Total Portfolio Value is \(Portfolio.shared.value)")
-                
-                Text("Hello")
-                
+                Text("Total Portfolio Value is \(Portfolio.shared.portfolioValue)")
+                Spacer()
                 Button("New Order") {
                     showingNewOrderPage.toggle()
                 }
-                .padding(100.0)
+                
                 .sheet(isPresented: $showingNewOrderPage) {
                     Section {
                         Form{
-                            TextField("remove Stock Name", text: $StockEntered)
+                            TextField("Enter Stock Name", text: $StockEntered)
+                            TextField("Enter Quantity", text:
+                                        $QuantityBought)
                             
                         }
                     }
                     Button("Confirm Order") {
+                        
                         showingNewOrderPage.toggle()
                     }
                 }
