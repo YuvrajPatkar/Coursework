@@ -19,6 +19,7 @@
 		63BB1EA62C8B4734008C3D20 /* Portfolio Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1EA52C8B4734008C3D20 /* Portfolio Screen.swift */; };
 		63BB1EAB2C8B48DD008C3D20 /* History Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */; };
 		63BB1EAF2C8B4902008C3D20 /* Exchange Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */; };
+		63CEF5012CA4232F005DA87C /* API .swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CEF5002CA4232F005DA87C /* API .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		63BB1EA52C8B4734008C3D20 /* Portfolio Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Portfolio Screen.swift"; sourceTree = "<group>"; };
 		63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History Screen.swift"; sourceTree = "<group>"; };
 		63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exchange Screen.swift"; sourceTree = "<group>"; };
+		63CEF5002CA4232F005DA87C /* API .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */,
 				63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */,
 				633D0DBC2C91B2660091D46C /* Portfolio.swift */,
+				63CEF5002CA4232F005DA87C /* API .swift */,
 			);
 			path = Tradle;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				63BB1EAB2C8B48DD008C3D20 /* History Screen.swift in Sources */,
 				63BB1EA62C8B4734008C3D20 /* Portfolio Screen.swift in Sources */,
 				63BB1EAF2C8B4902008C3D20 /* Exchange Screen.swift in Sources */,
+				63CEF5012CA4232F005DA87C /* API .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

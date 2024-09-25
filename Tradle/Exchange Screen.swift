@@ -9,7 +9,9 @@ import SwiftUI
 
 struct Exchange_Screen: View {
     var body: some View {
-        Text("Delta")
+        Section {
+            Text()
+        }
     }
 }
 
