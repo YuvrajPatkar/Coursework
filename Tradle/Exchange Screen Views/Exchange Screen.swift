@@ -9,11 +9,15 @@ import SwiftUI
 
 struct Exchange_Screen: View {
     var body: some View {
-        Section {
-            Text()
+        VStack{
+            StockBlock()
         }
     }
 }
+
+
+
+
 
 #Preview {
     Exchange_Screen()

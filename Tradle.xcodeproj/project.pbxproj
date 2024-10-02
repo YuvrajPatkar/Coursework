@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		631A0F392CAD5E83003C0BB4 /* StockDataResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A0F382CAD5E83003C0BB4 /* StockDataResults.swift */; };
+		631A0F492CAD6359003C0BB4 /* Exchange Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A0F472CAD6359003C0BB4 /* Exchange Screen.swift */; };
+		631A0F4C2CAD635C003C0BB4 /* Portfolio Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A0F4A2CAD635C003C0BB4 /* Portfolio Screen.swift */; };
+		631A0F4F2CAD635F003C0BB4 /* History Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A0F4D2CAD635F003C0BB4 /* History Screen.swift */; };
+		631A0F512CAD63AC003C0BB4 /* ExchangeStockBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A0F502CAD63AC003C0BB4 /* ExchangeStockBlock.swift */; };
 		633D0DBD2C91B2660091D46C /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633D0DBC2C91B2660091D46C /* Portfolio.swift */; };
 		63BB1E7A2C8B3BBC008C3D20 /* TradleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1E792C8B3BBC008C3D20 /* TradleApp.swift */; };
 		63BB1E7C2C8B3BBC008C3D20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1E7B2C8B3BBC008C3D20 /* ContentView.swift */; };
@@ -16,10 +21,6 @@
 		63BB1E952C8B3BBE008C3D20 /* TradleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1E942C8B3BBE008C3D20 /* TradleUITests.swift */; };
 		63BB1E972C8B3BBE008C3D20 /* TradleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1E962C8B3BBE008C3D20 /* TradleUITestsLaunchTests.swift */; };
 		63BB1EA42C8B4551008C3D20 /* Home Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1EA32C8B4551008C3D20 /* Home Screen.swift */; };
-		63BB1EA62C8B4734008C3D20 /* Portfolio Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1EA52C8B4734008C3D20 /* Portfolio Screen.swift */; };
-		63BB1EAB2C8B48DD008C3D20 /* History Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */; };
-		63BB1EAF2C8B4902008C3D20 /* Exchange Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */; };
-		63CEF5012CA4232F005DA87C /* API .swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CEF5002CA4232F005DA87C /* API .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		631A0F382CAD5E83003C0BB4 /* StockDataResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDataResults.swift; sourceTree = "<group>"; };
+		631A0F472CAD6359003C0BB4 /* Exchange Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exchange Screen.swift"; sourceTree = "<group>"; };
+		631A0F4A2CAD635C003C0BB4 /* Portfolio Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Portfolio Screen.swift"; sourceTree = "<group>"; };
+		631A0F4D2CAD635F003C0BB4 /* History Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History Screen.swift"; sourceTree = "<group>"; };
+		631A0F502CAD63AC003C0BB4 /* ExchangeStockBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeStockBlock.swift; sourceTree = "<group>"; };
 		633D0DBC2C91B2660091D46C /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		63BB1E762C8B3BBC008C3D20 /* Tradle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tradle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BB1E792C8B3BBC008C3D20 /* TradleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradleApp.swift; sourceTree = "<group>"; };
@@ -52,10 +58,6 @@
 		63BB1E942C8B3BBE008C3D20 /* TradleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradleUITests.swift; sourceTree = "<group>"; };
 		63BB1E962C8B3BBE008C3D20 /* TradleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		63BB1EA32C8B4551008C3D20 /* Home Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home Screen.swift"; sourceTree = "<group>"; };
-		63BB1EA52C8B4734008C3D20 /* Portfolio Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Portfolio Screen.swift"; sourceTree = "<group>"; };
-		63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History Screen.swift"; sourceTree = "<group>"; };
-		63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exchange Screen.swift"; sourceTree = "<group>"; };
-		63CEF5002CA4232F005DA87C /* API .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,18 +85,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		633D0DBE2C91B2D70091D46C /* View */ = {
+		631A0F482CAD6359003C0BB4 /* Exchange Screen Views */ = {
 			isa = PBXGroup;
 			children = (
+				631A0F472CAD6359003C0BB4 /* Exchange Screen.swift */,
+				631A0F502CAD63AC003C0BB4 /* ExchangeStockBlock.swift */,
 			);
-			path = View;
+			path = "Exchange Screen Views";
 			sourceTree = "<group>";
 		};
-		633D0DBF2C91B2DC0091D46C /* Model */ = {
+		631A0F4B2CAD635C003C0BB4 /* Portfolio Screen Views */ = {
 			isa = PBXGroup;
 			children = (
+				631A0F4A2CAD635C003C0BB4 /* Portfolio Screen.swift */,
+				633D0DBC2C91B2660091D46C /* Portfolio.swift */,
 			);
-			path = Model;
+			path = "Portfolio Screen Views";
+			sourceTree = "<group>";
+		};
+		631A0F4E2CAD635F003C0BB4 /* History Screen Views */ = {
+			isa = PBXGroup;
+			children = (
+				631A0F4D2CAD635F003C0BB4 /* History Screen.swift */,
+			);
+			path = "History Screen Views";
+			sourceTree = "<group>";
+		};
+		633D0DBF2C91B2DC0091D46C /* Home Screen Views */ = {
+			isa = PBXGroup;
+			children = (
+				63BB1EA32C8B4551008C3D20 /* Home Screen.swift */,
+			);
+			path = "Home Screen Views";
 			sourceTree = "<group>";
 		};
 		63BB1E6D2C8B3BBC008C3D20 = {
@@ -120,18 +142,15 @@
 		63BB1E782C8B3BBC008C3D20 /* Tradle */ = {
 			isa = PBXGroup;
 			children = (
-				633D0DBF2C91B2DC0091D46C /* Model */,
-				633D0DBE2C91B2D70091D46C /* View */,
 				63BB1E792C8B3BBC008C3D20 /* TradleApp.swift */,
 				63BB1E7B2C8B3BBC008C3D20 /* ContentView.swift */,
 				63BB1E7D2C8B3BBE008C3D20 /* Assets.xcassets */,
 				63BB1E7F2C8B3BBE008C3D20 /* Preview Content */,
-				63BB1EA32C8B4551008C3D20 /* Home Screen.swift */,
-				63BB1EA52C8B4734008C3D20 /* Portfolio Screen.swift */,
-				63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */,
-				63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */,
-				633D0DBC2C91B2660091D46C /* Portfolio.swift */,
-				63CEF5002CA4232F005DA87C /* API .swift */,
+				631A0F382CAD5E83003C0BB4 /* StockDataResults.swift */,
+				631A0F4E2CAD635F003C0BB4 /* History Screen Views */,
+				631A0F4B2CAD635C003C0BB4 /* Portfolio Screen Views */,
+				631A0F482CAD6359003C0BB4 /* Exchange Screen Views */,
+				633D0DBF2C91B2DC0091D46C /* Home Screen Views */,
 			);
 			path = Tradle;
 			sourceTree = "<group>";
@@ -295,10 +314,11 @@
 				63BB1E7A2C8B3BBC008C3D20 /* TradleApp.swift in Sources */,
 				63BB1EA42C8B4551008C3D20 /* Home Screen.swift in Sources */,
 				633D0DBD2C91B2660091D46C /* Portfolio.swift in Sources */,
-				63BB1EAB2C8B48DD008C3D20 /* History Screen.swift in Sources */,
-				63BB1EA62C8B4734008C3D20 /* Portfolio Screen.swift in Sources */,
-				63BB1EAF2C8B4902008C3D20 /* Exchange Screen.swift in Sources */,
-				63CEF5012CA4232F005DA87C /* API .swift in Sources */,
+				631A0F392CAD5E83003C0BB4 /* StockDataResults.swift in Sources */,
+				631A0F4F2CAD635F003C0BB4 /* History Screen.swift in Sources */,
+				631A0F512CAD63AC003C0BB4 /* ExchangeStockBlock.swift in Sources */,
+				631A0F4C2CAD635C003C0BB4 /* Portfolio Screen.swift in Sources */,
+				631A0F492CAD6359003C0BB4 /* Exchange Screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
