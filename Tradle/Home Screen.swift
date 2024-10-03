@@ -9,7 +9,11 @@ import SwiftUI
 
 
 
+
 struct Home_Screen: View {
+    
+    @State private var PortfolioViewModel = Portfolio.shared
+    
     
     @State private var showingNewOrderPage = false
     @State private var StockEntered: String = ""

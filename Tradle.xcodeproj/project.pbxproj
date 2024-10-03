@@ -20,6 +20,10 @@
 		63BB1EAB2C8B48DD008C3D20 /* History Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */; };
 		63BB1EAF2C8B4902008C3D20 /* Exchange Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */; };
 		63CEF5012CA4232F005DA87C /* API .swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CEF5002CA4232F005DA87C /* API .swift */; };
+		8B8CDBC22CA54F0E00E26220 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CDBC12CA54F0E00E26220 /* Position.swift */; };
+		8B8CDBC42CA54F2B00E26220 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CDBC32CA54F2B00E26220 /* Security.swift */; };
+		8B8CDBC82CAE8ACE00E26220 /* ExchangeStockBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CDBC72CAE8ACE00E26220 /* ExchangeStockBlockView.swift */; };
+		8B8CDBCA2CAE8B3300E26220 /* StockDataResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CDBC92CAE8B3300E26220 /* StockDataResults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History Screen.swift"; sourceTree = "<group>"; };
 		63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exchange Screen.swift"; sourceTree = "<group>"; };
 		63CEF5002CA4232F005DA87C /* API .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API .swift"; sourceTree = "<group>"; };
+		8B8CDBC12CA54F0E00E26220 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		8B8CDBC32CA54F2B00E26220 /* Security.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
+		8B8CDBC72CAE8ACE00E26220 /* ExchangeStockBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeStockBlockView.swift; sourceTree = "<group>"; };
+		8B8CDBC92CAE8B3300E26220 /* StockDataResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDataResults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,20 +91,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		633D0DBE2C91B2D70091D46C /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		633D0DBF2C91B2DC0091D46C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		63BB1E6D2C8B3BBC008C3D20 = {
 			isa = PBXGroup;
 			children = (
@@ -120,8 +114,6 @@
 		63BB1E782C8B3BBC008C3D20 /* Tradle */ = {
 			isa = PBXGroup;
 			children = (
-				633D0DBF2C91B2DC0091D46C /* Model */,
-				633D0DBE2C91B2D70091D46C /* View */,
 				63BB1E792C8B3BBC008C3D20 /* TradleApp.swift */,
 				63BB1E7B2C8B3BBC008C3D20 /* ContentView.swift */,
 				63BB1E7D2C8B3BBE008C3D20 /* Assets.xcassets */,
@@ -130,8 +122,12 @@
 				63BB1EA52C8B4734008C3D20 /* Portfolio Screen.swift */,
 				63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */,
 				63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */,
-				633D0DBC2C91B2660091D46C /* Portfolio.swift */,
 				63CEF5002CA4232F005DA87C /* API .swift */,
+				633D0DBC2C91B2660091D46C /* Portfolio.swift */,
+				8B8CDBC12CA54F0E00E26220 /* Position.swift */,
+				8B8CDBC32CA54F2B00E26220 /* Security.swift */,
+				8B8CDBC72CAE8ACE00E26220 /* ExchangeStockBlockView.swift */,
+				8B8CDBC92CAE8B3300E26220 /* StockDataResults.swift */,
 			);
 			path = Tradle;
 			sourceTree = "<group>";
@@ -292,13 +288,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				63BB1E7C2C8B3BBC008C3D20 /* ContentView.swift in Sources */,
+				8B8CDBCA2CAE8B3300E26220 /* StockDataResults.swift in Sources */,
 				63BB1E7A2C8B3BBC008C3D20 /* TradleApp.swift in Sources */,
 				63BB1EA42C8B4551008C3D20 /* Home Screen.swift in Sources */,
+				8B8CDBC82CAE8ACE00E26220 /* ExchangeStockBlockView.swift in Sources */,
+				8B8CDBC42CA54F2B00E26220 /* Security.swift in Sources */,
 				633D0DBD2C91B2660091D46C /* Portfolio.swift in Sources */,
 				63BB1EAB2C8B48DD008C3D20 /* History Screen.swift in Sources */,
 				63BB1EA62C8B4734008C3D20 /* Portfolio Screen.swift in Sources */,
 				63BB1EAF2C8B4902008C3D20 /* Exchange Screen.swift in Sources */,
 				63CEF5012CA4232F005DA87C /* API .swift in Sources */,
+				8B8CDBC22CA54F0E00E26220 /* Position.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
