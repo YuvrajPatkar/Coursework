@@ -9,9 +9,9 @@ import Foundation
 
 class StockDataResults: Codable {
     var name: String
-    var price: Float
+    var price: Double
     
-    init(name: String, price: Float) {
+    init(name: String, price: Double) {
         self.name = name
         self.price = price
     }

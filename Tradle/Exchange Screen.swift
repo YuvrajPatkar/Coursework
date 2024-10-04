@@ -10,7 +10,13 @@ import SwiftUI
 struct Exchange_Screen: View {
     var body: some View {
         VStack{
-            testStockData()
+            ExchangeStockBlockView(StockData: Security(stockName: "Apple", stockPrice: 225.67))
+            ExchangeStockBlockView(StockData: Security(stockName: "Amazon", stockPrice: 132.35))
+            ExchangeStockBlockView(StockData: Security(stockName: "Microsoft", stockPrice: 325.69))
+            ExchangeStockBlockView(StockData: Security(stockName: "Alphabet", stockPrice: 132.15))
+            ExchangeStockBlockView(StockData: Security(stockName: "NVIDIA", stockPrice: 434.67))
+            ExchangeStockBlockView(StockData: Security(stockName: "Meta Platforms", stockPrice: 311.56))
+            
         }
     }
 }
@@ -18,3 +24,4 @@ struct Exchange_Screen: View {
 #Preview {
     Exchange_Screen()
 }
+

@@ -11,10 +11,12 @@ class Position {
     var security: Security
     var volume: Double
     var PositionValue: Double {
-        return self.volume * self.security.currentPrice
+        return self.volume * self.security.stockPrice
     }
     
-    init(security: Security) {
+    init(security: Security, volume: Double) {
         self.security = security
+        self.volume = volume
+        
     }
 }

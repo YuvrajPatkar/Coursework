@@ -31,19 +31,21 @@ struct Home_Screen: View {
                     showingNewOrderPage.toggle()
                 }
                 
+                
                 .sheet(isPresented: $showingNewOrderPage) {
                     Section {
                         Form{
                             TextField("Enter Stock Name", text: $StockEntered)
                             TextField("Enter Quantity", text:
                                         $QuantityBought)
-                            
+                
                         }
                     }
                     Button("Confirm Order") {
                         
                         showingNewOrderPage.toggle()
                     }
+                 
                 }
             }
         }

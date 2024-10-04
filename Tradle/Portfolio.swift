@@ -12,7 +12,7 @@ class Portfolio: ObservableObject {
     
     static let shared = Portfolio()
     
-    var totalCash: Double = 100000
+    var totalCash: Double = 12345.67
     
     var portfolioValue: String {
         let portval = totalCash + totalEquity

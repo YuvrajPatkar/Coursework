@@ -20,6 +20,7 @@
 		63BB1EAB2C8B48DD008C3D20 /* History Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */; };
 		63BB1EAF2C8B4902008C3D20 /* Exchange Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */; };
 		63CEF5012CA4232F005DA87C /* API .swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CEF5002CA4232F005DA87C /* API .swift */; };
+		8B6440DE2CB02FA40074F876 /* NumberRounder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6440DD2CB02FA40074F876 /* NumberRounder.swift */; };
 		8B8CDBC22CA54F0E00E26220 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CDBC12CA54F0E00E26220 /* Position.swift */; };
 		8B8CDBC42CA54F2B00E26220 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CDBC32CA54F2B00E26220 /* Security.swift */; };
 		8B8CDBC82CAE8ACE00E26220 /* ExchangeStockBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CDBC72CAE8ACE00E26220 /* ExchangeStockBlockView.swift */; };
@@ -60,6 +61,7 @@
 		63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History Screen.swift"; sourceTree = "<group>"; };
 		63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exchange Screen.swift"; sourceTree = "<group>"; };
 		63CEF5002CA4232F005DA87C /* API .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API .swift"; sourceTree = "<group>"; };
+		8B6440DD2CB02FA40074F876 /* NumberRounder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberRounder.swift; sourceTree = "<group>"; };
 		8B8CDBC12CA54F0E00E26220 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		8B8CDBC32CA54F2B00E26220 /* Security.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
 		8B8CDBC72CAE8ACE00E26220 /* ExchangeStockBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeStockBlockView.swift; sourceTree = "<group>"; };
@@ -116,18 +118,18 @@
 			children = (
 				63BB1E792C8B3BBC008C3D20 /* TradleApp.swift */,
 				63BB1E7B2C8B3BBC008C3D20 /* ContentView.swift */,
-				63BB1E7D2C8B3BBE008C3D20 /* Assets.xcassets */,
+				8B6440E12CB036890074F876 /* HomeScreen View Model */,
 				63BB1E7F2C8B3BBE008C3D20 /* Preview Content */,
-				63BB1EA32C8B4551008C3D20 /* Home Screen.swift */,
-				63BB1EA52C8B4734008C3D20 /* Portfolio Screen.swift */,
-				63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */,
 				63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */,
-				63CEF5002CA4232F005DA87C /* API .swift */,
+				63BB1EA52C8B4734008C3D20 /* Portfolio Screen.swift */,
 				633D0DBC2C91B2660091D46C /* Portfolio.swift */,
+				63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */,
+				63CEF5002CA4232F005DA87C /* API .swift */,
 				8B8CDBC12CA54F0E00E26220 /* Position.swift */,
-				8B8CDBC32CA54F2B00E26220 /* Security.swift */,
 				8B8CDBC72CAE8ACE00E26220 /* ExchangeStockBlockView.swift */,
+				8B8CDBC32CA54F2B00E26220 /* Security.swift */,
 				8B8CDBC92CAE8B3300E26220 /* StockDataResults.swift */,
+				8B6440DD2CB02FA40074F876 /* NumberRounder.swift */,
 			);
 			path = Tradle;
 			sourceTree = "<group>";
@@ -135,6 +137,7 @@
 		63BB1E7F2C8B3BBE008C3D20 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				63BB1E7D2C8B3BBE008C3D20 /* Assets.xcassets */,
 				63BB1E802C8B3BBE008C3D20 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -155,6 +158,14 @@
 				63BB1E962C8B3BBE008C3D20 /* TradleUITestsLaunchTests.swift */,
 			);
 			path = TradleUITests;
+			sourceTree = "<group>";
+		};
+		8B6440E12CB036890074F876 /* HomeScreen View Model */ = {
+			isa = PBXGroup;
+			children = (
+				63BB1EA32C8B4551008C3D20 /* Home Screen.swift */,
+			);
+			path = "HomeScreen View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +309,7 @@
 				63BB1EA62C8B4734008C3D20 /* Portfolio Screen.swift in Sources */,
 				63BB1EAF2C8B4902008C3D20 /* Exchange Screen.swift in Sources */,
 				63CEF5012CA4232F005DA87C /* API .swift in Sources */,
+				8B6440DE2CB02FA40074F876 /* NumberRounder.swift in Sources */,
 				8B8CDBC22CA54F0E00E26220 /* Position.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

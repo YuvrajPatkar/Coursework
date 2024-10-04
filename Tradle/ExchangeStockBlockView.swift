@@ -8,21 +8,34 @@
 import SwiftUI
 
 
-@State var testStockData = StockDataResults(name: "Apple", price: 35)
 
 
 struct ExchangeStockBlockView: View {
     
-    let stock: StockDataResults
+    
+    @State var StockData: Security
+
     var body: some View {
-            VStack {
-                Text(testStockData.name)
-                Text(testStockData.price)
-            }
+        
+        HStack {
             
-        }
+            Text(StockData.stockName)
+                .font(.system(size: 24, weight: .bold))
+                .frame(maxWidth: .infinity, alignment: .leading)
+            
+            
+            Text(rounded(input:StockData.stockPrice))
+                .font(.system(size: 18, weight: .medium))
+                                .frame(alignment: .trailing)
+                        }
+                .padding()
+                .background(Color(.systemGray6))
+                .cornerRadius(10)
+            
+        
+    }
 }
 
 #Preview {
-    ExchangeStockBlockView()
+    ExchangeStockBlockView(StockData: Security(stockName: "Stock Name", stockPrice: 0.0))
 }

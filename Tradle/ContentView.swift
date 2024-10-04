@@ -38,7 +38,7 @@ struct ContentView: View {
         .alert(isPresented: $showAlert) {
             Alert(title: Text("Welcome To Tradle"),
                   message: Text("Disclaimer: This is a mock trading app. There is no use of real money all positions are on paper."),
-                  dismissButton: .default(Text("I Understand"))
+                  dismissButton: .default(Text("I Understand👅"))
             )
         }
         
