@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct Portfolio_Screen: View {
-    var body: some View {
-        Text("Gamma")
-    }
+        var body: some View {
+            Text("Beta")
+        }
 }
-
-
 
 
 #Preview {

@@ -18,6 +18,7 @@ struct Home_Screen: View {
     @State private var showingNewOrderPage = false
     @State private var StockEntered: String = ""
     @State private var QuantityBought: String = ""
+    @State private var OrderType: Bool
     
     
     
@@ -33,6 +34,7 @@ struct Home_Screen: View {
                 
                 
                 .sheet(isPresented: $showingNewOrderPage) {
+
                     Section {
                         Form{
                             TextField("Enter Stock Name", text: $StockEntered)
@@ -44,6 +46,7 @@ struct Home_Screen: View {
                     Button("Confirm Order") {
                         
                         showingNewOrderPage.toggle()
+                        
                     }
                  
                 }
