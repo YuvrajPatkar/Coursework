@@ -15,10 +15,10 @@ struct Home_Screen: View {
     @State private var PortfolioViewModel = Portfolio.shared
     
     
-    @State private var showingNewOrderPage = false
-    @State private var StockEntered: String = ""
-    @State private var QuantityBought: String = ""
-    @State private var OrderType: Bool
+    @State var showingNewOrderPage = false
+    @State var StockEntered: String = ""
+    @State var QuantityBought: String = ""
+    @State var OrderType:Bool = true
     
     
     
@@ -40,7 +40,16 @@ struct Home_Screen: View {
                             TextField("Enter Stock Name", text: $StockEntered)
                             TextField("Enter Quantity", text:
                                         $QuantityBought)
-                
+                            Toggle(isOn: $OrderType, label: {
+                                if OrderType == true {
+                                    Text("Buy")
+                                
+                                } else {
+                                    Text("Sell")
+                                    
+                                }
+                            })
+              
                         }
                     }
                     Button("Confirm Order") {
