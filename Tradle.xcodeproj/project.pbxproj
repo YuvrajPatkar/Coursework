@@ -26,7 +26,6 @@
 		8B8CDBC22CA54F0E00E26220 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CDBC12CA54F0E00E26220 /* Position.swift */; };
 		8B8CDBC42CA54F2B00E26220 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CDBC32CA54F2B00E26220 /* Security.swift */; };
 		8B8CDBC82CAE8ACE00E26220 /* ExchangeStockBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CDBC72CAE8ACE00E26220 /* ExchangeStockBlockView.swift */; };
-		8B8CDBCA2CAE8B3300E26220 /* StockDataResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CDBC92CAE8B3300E26220 /* StockDataResults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +68,6 @@
 		8B8CDBC12CA54F0E00E26220 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		8B8CDBC32CA54F2B00E26220 /* Security.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
 		8B8CDBC72CAE8ACE00E26220 /* ExchangeStockBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeStockBlockView.swift; sourceTree = "<group>"; };
-		8B8CDBC92CAE8B3300E26220 /* StockDataResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDataResults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,20 +120,13 @@
 			children = (
 				63BB1E792C8B3BBC008C3D20 /* TradleApp.swift */,
 				63BB1E7B2C8B3BBC008C3D20 /* ContentView.swift */,
-				8B6440E12CB036890074F876 /* HomeScreen View Model */,
+				8B6C32AA2CC2BB4500EBE6F4 /* Portfolio */,
+				8B6C32A92CC2BB2C00EBE6F4 /* Exchange */,
+				8B6440E12CB036890074F876 /* Home  */,
+				8B6C32AB2CC2BB8F00EBE6F4 /* History */,
+				8B6C32AC2CC2BBE700EBE6F4 /* API */,
+				8B6C32AD2CC2BC0200EBE6F4 /* Extra */,
 				63BB1E7F2C8B3BBE008C3D20 /* Preview Content */,
-				63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */,
-				63BB1EA52C8B4734008C3D20 /* Portfolio Screen.swift */,
-				633D0DBC2C91B2660091D46C /* Portfolio.swift */,
-				63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */,
-				63CEF5002CA4232F005DA87C /* API .swift */,
-				8B8CDBC12CA54F0E00E26220 /* Position.swift */,
-				8B8CDBC72CAE8ACE00E26220 /* ExchangeStockBlockView.swift */,
-				8B8CDBC32CA54F2B00E26220 /* Security.swift */,
-				8B8CDBC92CAE8B3300E26220 /* StockDataResults.swift */,
-				8B6440DD2CB02FA40074F876 /* NumberRounder.swift */,
-				8B6EA63F2CB6998500C29A95 /* Order.swift */,
-				8B6EA6412CB69D1100C29A95 /* JSON decoder.swift */,
 			);
 			path = Tradle;
 			sourceTree = "<group>";
@@ -166,12 +157,58 @@
 			path = TradleUITests;
 			sourceTree = "<group>";
 		};
-		8B6440E12CB036890074F876 /* HomeScreen View Model */ = {
+		8B6440E12CB036890074F876 /* Home  */ = {
 			isa = PBXGroup;
 			children = (
 				63BB1EA32C8B4551008C3D20 /* Home Screen.swift */,
 			);
-			path = "HomeScreen View Model";
+			path = "Home ";
+			sourceTree = "<group>";
+		};
+		8B6C32A92CC2BB2C00EBE6F4 /* Exchange */ = {
+			isa = PBXGroup;
+			children = (
+				63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */,
+				8B8CDBC72CAE8ACE00E26220 /* ExchangeStockBlockView.swift */,
+				8B8CDBC32CA54F2B00E26220 /* Security.swift */,
+			);
+			path = Exchange;
+			sourceTree = "<group>";
+		};
+		8B6C32AA2CC2BB4500EBE6F4 /* Portfolio */ = {
+			isa = PBXGroup;
+			children = (
+				63BB1EA52C8B4734008C3D20 /* Portfolio Screen.swift */,
+				633D0DBC2C91B2660091D46C /* Portfolio.swift */,
+				8B8CDBC12CA54F0E00E26220 /* Position.swift */,
+			);
+			path = Portfolio;
+			sourceTree = "<group>";
+		};
+		8B6C32AB2CC2BB8F00EBE6F4 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */,
+				8B6EA63F2CB6998500C29A95 /* Order.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		8B6C32AC2CC2BBE700EBE6F4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				63CEF5002CA4232F005DA87C /* API .swift */,
+				8B6EA6412CB69D1100C29A95 /* JSON decoder.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8B6C32AD2CC2BC0200EBE6F4 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				8B6440DD2CB02FA40074F876 /* NumberRounder.swift */,
+			);
+			path = Extra;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,7 +342,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				63BB1E7C2C8B3BBC008C3D20 /* ContentView.swift in Sources */,
-				8B8CDBCA2CAE8B3300E26220 /* StockDataResults.swift in Sources */,
 				63BB1E7A2C8B3BBC008C3D20 /* TradleApp.swift in Sources */,
 				63BB1EA42C8B4551008C3D20 /* Home Screen.swift in Sources */,
 				8B8CDBC82CAE8ACE00E26220 /* ExchangeStockBlockView.swift in Sources */,
@@ -482,6 +518,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tradle/Preview Content\"";
+				DEVELOPMENT_TEAM = GMAR433CVA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -510,6 +547,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tradle/Preview Content\"";
+				DEVELOPMENT_TEAM = GMAR433CVA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -537,6 +575,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GMAR433CVA;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -556,6 +595,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GMAR433CVA;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;

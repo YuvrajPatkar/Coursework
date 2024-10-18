@@ -23,7 +23,7 @@ class Portfolio: ObservableObject {
     var totalEquity: Double {
         var sum: Double = 0
         for position in equityPositions{
-            var sum = sum + position.PositionValue
+            sum = sum + position.PositionValue
         }
         return sum
         
