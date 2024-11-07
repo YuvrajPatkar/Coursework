@@ -9,14 +9,21 @@ import Foundation
 
 import Foundation
 
-class FinnhubService {
+class FinancialDataAPI: ObservableObject {
     
-    static let instance = FinnhubService()
-  
-    private var url = "https://finnhub.io/api/v1/"
-    private var token = "&token=ca3cscqad3i06dm2hhk0"
+    static let shared = FinancialDataAPI()
+    @Published var stockFinancialData: StockFinancialData?
+    
+    func getFinancialData(symbol: String, completion: @escaping (Bool) -> Void) {
+        let api = "Myo2pcrlppoyoozlJ3M3MEqWtc43gs6L"
+        let urlstring = "https://financialmodelingprep.com/api/v3/quote/\(symbol)?apikey=\(api)"
+
+
+    }
+
     
     
    
     
 }
+
