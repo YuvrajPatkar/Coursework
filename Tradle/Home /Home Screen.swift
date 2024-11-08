@@ -53,15 +53,21 @@ struct Home_Screen: View {
                         }
                     }
                     Button("Confirm Order") {
-                        
                         showingNewOrderPage.toggle()
-                        
-                    }
+                        hapticSuccessFeedback()
+                    }.sensoryFeedback(.success, trigger: showingNewOrderPage)
                  
                 }
             }
         }
     }
+    
+    private func hapticSuccessFeedback() {
+            let generator = UIImpactFeedbackGenerator(style: .heavy)
+            generator.impactOccurred()
+        }
+    
+    
 }
 #Preview {
     Home_Screen()

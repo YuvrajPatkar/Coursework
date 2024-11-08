@@ -27,6 +27,7 @@
 		8B8CDBC22CA54F0E00E26220 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CDBC12CA54F0E00E26220 /* Position.swift */; };
 		8B8CDBC42CA54F2B00E26220 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CDBC32CA54F2B00E26220 /* Security.swift */; };
 		8B8CDBC82CAE8ACE00E26220 /* ExchangeStockBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CDBC72CAE8ACE00E26220 /* ExchangeStockBlockView.swift */; };
+		8BAFEF282CDE874F00EF7CEF /* Expanded Security SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAFEF272CDE874F00EF7CEF /* Expanded Security SheetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		8B8CDBC12CA54F0E00E26220 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		8B8CDBC32CA54F2B00E26220 /* Security.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
 		8B8CDBC72CAE8ACE00E26220 /* ExchangeStockBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeStockBlockView.swift; sourceTree = "<group>"; };
+		8BAFEF272CDE874F00EF7CEF /* Expanded Security SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expanded Security SheetView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */,
 				8B8CDBC72CAE8ACE00E26220 /* ExchangeStockBlockView.swift */,
 				8B8CDBC32CA54F2B00E26220 /* Security.swift */,
+				8BAFEF272CDE874F00EF7CEF /* Expanded Security SheetView.swift */,
 			);
 			path = Exchange;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				63BB1E7C2C8B3BBC008C3D20 /* ContentView.swift in Sources */,
 				63BB1E7A2C8B3BBC008C3D20 /* TradleApp.swift in Sources */,
 				63BB1EA42C8B4551008C3D20 /* Home Screen.swift in Sources */,
+				8BAFEF282CDE874F00EF7CEF /* Expanded Security SheetView.swift in Sources */,
 				8B8CDBC82CAE8ACE00E26220 /* ExchangeStockBlockView.swift in Sources */,
 				8B8CDBC42CA54F2B00E26220 /* Security.swift in Sources */,
 				8B5A8F962CDB96C3000ACB32 /* StockFinancialData.swift in Sources */,
