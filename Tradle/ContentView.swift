@@ -22,10 +22,10 @@ struct ContentView: View {
                     .tabItem {
                         Label("Portfolio", systemImage: "toilet")
                     }
-//                Exchange_Screen()
-//                    .tabItem {
-//                        Label("Exchange", systemImage: "ferry.fill")
-//                    }
+                Exchange_Screen()
+                    .tabItem {
+                        Label("Exchange", systemImage: "ferry.fill")
+                    }
                 History_Screen()
                     .tabItem {
                         Label("History", systemImage: "ivfluid.bag")

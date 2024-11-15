@@ -20,14 +20,21 @@ struct ExchangeStockBlockView: View {
                 ProgressView("Fetching \(stockSymbol)...")
                     .padding()
             } else if let stockData = api.stockFinancialData {
-                HStack {
-                    Text(stockData.symbol)
-                        .font(.system(size: 24, weight: .bold))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    
-                    Text(rounded(input: stockData.price))
-                        .font(.system(size: 18, weight: .medium))
-                        .frame(alignment: .trailing)
+                VStack{
+                    HStack {
+                        
+                        Text(stockData.symbol)
+                            .font(.system(size: 27, weight: .bold))
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        Text(rounded(input: stockData.price))
+                            .font(.system(size: 22, weight: .medium))
+                            .frame(alignment: .trailing)
+                        
+                    }
+                    Text(String(stockData.changesPercentage))
+                        .font(.system(size: 18, weight: .light))
+                        .frame(maxWidth: .infinity, alignment: .trailing)
                 }
                 .padding()
                 .background(Color(.systemGray6))

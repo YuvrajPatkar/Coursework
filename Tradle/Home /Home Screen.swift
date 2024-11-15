@@ -26,7 +26,12 @@ struct Home_Screen: View {
         VStack{
             Spacer()
             Section {
-                Text("Total Portfolio Value is \(Portfolio.shared.portfolioValue)")
+                Text("Total Portfolio Value")
+                    .font(.system(size: 30, weight: .medium ))
+                    
+                Text(String(Portfolio.shared.portfolioValue))
+                    .font(.system(size:25, weight: .bold))
+                    .foregroundColor(Color.green)
                 Spacer()
                 Button("New Order") {
                     showingNewOrderPage.toggle()
@@ -40,6 +45,7 @@ struct Home_Screen: View {
                             TextField("Enter Stock Name", text: $StockEntered)
                             TextField("Enter Quantity", text:
                                         $QuantityBought)
+                            
                             Toggle(isOn: $OrderType, label: {
                                 if OrderType == true {
                                     Text("Buy")
