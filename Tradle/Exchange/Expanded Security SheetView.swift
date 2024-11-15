@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let apple = Security(stockName: "Apple", stockPrice: 543.2)
+let apple = Security(stockName: "Apple", stockPrice: 69.0)
 
 struct Expanded_Security_SheetView: View {
 
@@ -16,7 +16,9 @@ struct Expanded_Security_SheetView: View {
     var body: some View {
         VStack{
             Text(stock.stockName)
-                .font(.system(size: 24, weight: .bold))
+                .font(.system(size: 50, weight: .bold))
+            Text(String(stock.stockPrice))
+               
                 
             
         }

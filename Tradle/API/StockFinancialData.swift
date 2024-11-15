@@ -7,20 +7,28 @@
 
 import Foundation
 
-class StockFinancialData: Codable {
+struct StockFinancialData: Codable {
     var id: UUID { UUID() }
     let symbol: String
+    let name: String
     let price: Double
+    let changesPercentage: Double
     let change: Double
-    let changePercent: Double
-    let daysLow: Double
-    let daysHigh: Double
-    let yearLow: Double
+    let dayLow: Double
+    let dayHigh: Double
     let yearHigh: Double
+    let yearLow: Double
     let marketCap: Double
-    let beta: Double
-    let priceToBook: Double
-    let dividendYield: Double
+    let priceAvg50: Double
+    let priceAvg200: Double
+    let exchange: String
+    let volume: Int
+    let avgVolume: Int
+    let open: Double
+    let previousClose: Double
     let eps: Double
-    let peRatio: Double
+    let pe: Double
+    let earningsAnnouncement: String
+    let sharesOutstanding: Int
+    let timestamp: Int
 }

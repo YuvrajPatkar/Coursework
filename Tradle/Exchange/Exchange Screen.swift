@@ -28,12 +28,12 @@ struct Exchange_Screen: View {
                 }
             }
             
-            ExchangeStockBlockView(StockData: Security(stockName: "Apple", stockPrice: 225.67))
-            ExchangeStockBlockView(StockData: Security(stockName: "Amazon", stockPrice: 132.35))
-            ExchangeStockBlockView(StockData: Security(stockName: "Microsoft", stockPrice: 325.69))
-            ExchangeStockBlockView(StockData: Security(stockName: "Alphabet", stockPrice: 132.15))
-            ExchangeStockBlockView(StockData: Security(stockName: "NVIDIA", stockPrice: 434.67))
-            ExchangeStockBlockView(StockData: Security(stockName: "Meta Platforms", stockPrice: 311.56))
+            ExchangeStockBlockView(stockSymbol: "AAPL")
+            ExchangeStockBlockView(stockSymbol: "TSLA")
+            ExchangeStockBlockView(stockSymbol: "MSFT")
+            ExchangeStockBlockView(stockSymbol: "GS")
+            ExchangeStockBlockView(stockSymbol: "KKR")
+            
             
         }
     }
