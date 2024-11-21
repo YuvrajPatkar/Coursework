@@ -11,7 +11,7 @@ class FinancialDataAPI: ObservableObject {
     @Published var stockFinancialData: StockFinancialData?
     
     func getFinancialData(symbol: String, completion: @escaping (Bool) -> Void) {
-        let apiToken = "Myo2pcrlppoyoozlJ3M3MEqWtc43gs6L"
+        let apiToken = "rkdDDmqRlNNOqyo9Qh4JQJgQkkX9s2qc"
         let baseUrl = "https://financialmodelingprep.com/api/v3/quote/"
         
         guard var urlComponents = URLComponents(string: baseUrl) else {

@@ -65,11 +65,8 @@ struct ExchangeStockBlockView: View {
         }
     }
     
-    private func rounded(input: Double) -> String {
-        String(format: "%.2f", input)
-    }
 }
 
 #Preview {
-    ExchangeStockBlockView(stockSymbol: "AAPL")
+    ExchangeStockBlockView(stockSymbol: "META")
 }

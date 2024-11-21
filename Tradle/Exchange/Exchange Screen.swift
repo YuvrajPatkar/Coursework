@@ -7,35 +7,48 @@
 
 import SwiftUI
 
-struct Exchange_Screen: View {
-    var body: some View {
-        
-        @State var showingNewSecurityPage = false
-        
-        VStack{
 
+
+struct Exchange_Screen: View {
+    
+    var stocksToDisplay = ["AAPL", "TSLA", "MSFT,"]
+    
+    @State var showingNewSecurityPage = false
+    @State var stockToAdd: String = ""
+
+    var body: some View {
+        VStack{
             Button("New Security") {
                 showingNewSecurityPage.toggle()
             }
-            
-            
+  
             .sheet(isPresented: $showingNewSecurityPage) {
                 
                 Section {
+                    Button("Back")
+                    {
+                        showingNewSecurityPage.toggle()
+                    }
                     Form{
-                        Text("HEllO WORLD")
+                        TextField("Enter Stock Ticker", text: $stockToAdd)
+                        Spacer()
+                    }
+                    Button("Add Security") {
+                        stocksToDisplay.append(stockToAdd)
+                        showingNewSecurityPage.toggle()
                     }
                 }
             }
-            
-            ExchangeStockBlockView(stockSymbol: "AAPL")
-            ExchangeStockBlockView(stockSymbol: "TSLA")
-            ExchangeStockBlockView(stockSymbol: "MSFT")
-            ExchangeStockBlockView(stockSymbol: "GS")
-            ExchangeStockBlockView(stockSymbol: "KKR")
-            
-            
         }
+        ScrollView{
+            VStack{
+                ForEach(stocksToDisplay, id: \.self) {
+                    stockSymbol in ExchangeStockBlockView(stockSymbol: stockSymbol)
+                    
+    
+                }
+            }
+                    }
     }
 }
 
