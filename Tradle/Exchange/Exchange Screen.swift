@@ -37,7 +37,8 @@ struct Exchange_Screen: View {
                             stocksToDisplay.append(stockToAdd)
                             stockToAdd = ""
                             showingNewSecurityPage.toggle()
-                        }
+                            hapticSuccessFeedback()
+                        }.sensoryFeedback(.success, trigger: showingNewSecurityPage)
                     }
                 }
                 ForEach(stocksToDisplay, id: \.self) {
@@ -46,6 +47,11 @@ struct Exchange_Screen: View {
             }
         }
     }
+    public func hapticSuccessFeedback() {
+            let generator = UIImpactFeedbackGenerator(style: .heavy)
+            generator.impactOccurred()
+        }
+
 }
 
 #Preview {

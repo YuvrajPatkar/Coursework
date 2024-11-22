@@ -7,7 +7,3 @@
 
 import Foundation
 
-public func hapticSuccessFeedback() {
-        let generator = UIImpactFeedbackGenerator(style: .heavy)
-        generator.impactOccurred()
-    }

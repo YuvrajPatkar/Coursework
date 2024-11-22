@@ -67,7 +67,11 @@ struct Home_Screen: View {
             }
         }
     }
-    
+    public func hapticSuccessFeedback() {
+            let generator = UIImpactFeedbackGenerator(style: .heavy)
+            generator.impactOccurred()
+        }
+
     
 }
 #Preview {
