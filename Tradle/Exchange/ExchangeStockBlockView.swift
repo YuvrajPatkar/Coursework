@@ -11,6 +11,7 @@ struct ExchangeStockBlockView: View {
     @StateObject private var api = FinancialDataAPI()
     @State private var isLoading = true
     @State private var errorMessage: String?
+    @State private var showingExpandedStockSheetView = false
     
     var stockSymbol: String
     
@@ -35,6 +36,15 @@ struct ExchangeStockBlockView: View {
                     Text(String(stockData.changesPercentage))
                         .font(.system(size: 18, weight: .light))
                         .frame(maxWidth: .infinity, alignment: .trailing)
+                    Button("📈") {
+                        showingExpandedStockSheetView.toggle()
+                    }
+                    .font(.system(size: 50, weight: .ultraLight))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .sheet(isPresented: $showingExpandedStockSheetView)
+                    {
+                        Expanded_Security_SheetView(stock: stockData)
+                    }
                 }
                 .padding()
                 .background(Color(.systemGray6))

@@ -11,44 +11,40 @@ import SwiftUI
 
 struct Exchange_Screen: View {
     
-    var stocksToDisplay = ["AAPL", "TSLA", "MSFT,"]
+    @State var stocksToDisplay: [String] = ["AAPL", "GOOG"]
     
     @State var showingNewSecurityPage = false
     @State var stockToAdd: String = ""
 
     var body: some View {
-        VStack{
-            Button("New Security") {
-                showingNewSecurityPage.toggle()
-            }
-  
-            .sheet(isPresented: $showingNewSecurityPage) {
-                
-                Section {
-                    Button("Back")
-                    {
-                        showingNewSecurityPage.toggle()
+        
+        ScrollView{
+            VStack{
+                Button("New Security") {
+                    showingNewSecurityPage.toggle()
+                }
+                .sheet(isPresented: $showingNewSecurityPage) {
+                    Section {
+                        Button("Back")
+                        {
+                            showingNewSecurityPage.toggle()
+                        }
+                        Form{
+                            TextField("Enter Stock Ticker", text: $stockToAdd)
+                            Spacer()
+                        }
+                        Button("Add Security") {
+                            stocksToDisplay.append(stockToAdd)
+                            stockToAdd = ""
+                            showingNewSecurityPage.toggle()
+                        }
                     }
-                    Form{
-                        TextField("Enter Stock Ticker", text: $stockToAdd)
-                        Spacer()
-                    }
-                    Button("Add Security") {
-                        stocksToDisplay.append(stockToAdd)
-                        showingNewSecurityPage.toggle()
-                    }
+                }
+                ForEach(stocksToDisplay, id: \.self) {
+                    stockSymbol in ExchangeStockBlockView(stockSymbol: stockSymbol)
                 }
             }
         }
-        ScrollView{
-            VStack{
-                ForEach(stocksToDisplay, id: \.self) {
-                    stockSymbol in ExchangeStockBlockView(stockSymbol: stockSymbol)
-                    
-    
-                }
-            }
-                    }
     }
 }
 

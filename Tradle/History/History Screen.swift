@@ -9,8 +9,9 @@ import SwiftUI
 
 struct History_Screen: View {
     var body: some View {
-        Text("𝓯𝓻𝓮𝓪𝓴𝔂 👅👅👅👅")
-            .font(.system(size: 80, weight: .bold))
+//        Text("𝓯𝓻𝓮𝓪𝓴𝔂 👅👅👅👅")
+//            .font(.system(size: 80, weight: .bold))
+        Text("Hello")
     }
 }
 

@@ -7,17 +7,22 @@
 
 import SwiftUI
 
-let apple = Security(stockName: "Apple", stockPrice: 69.0)
+
 
 struct Expanded_Security_SheetView: View {
 
-    var stock: Security
+    var stock: StockFinancialData
     
     var body: some View {
         VStack{
-            Text(stock.stockName)
-                .font(.system(size: 50, weight: .bold))
-            Text(String(stock.stockPrice))
+            Text(stock.name)
+                .font(.system(size: 40, weight: .bold))
+            Text("Current Price: \(stock.price)")
+                .font(.system(size: 20))
+            Text("Percentge Change:  \(stock.changesPercentage)")
+            Text("Points Change: \(stock.change)")
+            Text("Market Cap: \(stock.marketCap)")
+            Text("Volume: \(stock.volume)")
                
                 
             
@@ -25,6 +30,4 @@ struct Expanded_Security_SheetView: View {
     }
 }
 
-#Preview {
-    Expanded_Security_SheetView(stock: apple)
-}
+

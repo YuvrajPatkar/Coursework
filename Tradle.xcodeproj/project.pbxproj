@@ -20,6 +20,7 @@
 		63BB1EAB2C8B48DD008C3D20 /* History Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */; };
 		63BB1EAF2C8B4902008C3D20 /* Exchange Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */; };
 		63CEF5012CA4232F005DA87C /* API .swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CEF5002CA4232F005DA87C /* API .swift */; };
+		8B12EB762CF0F7E500E068AB /* Haptic Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B12EB752CF0F7E500E068AB /* Haptic Feedback.swift */; };
 		8B5A8F962CDB96C3000ACB32 /* StockFinancialData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5A8F952CDB96C3000ACB32 /* StockFinancialData.swift */; };
 		8B6440DE2CB02FA40074F876 /* NumberRounder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6440DD2CB02FA40074F876 /* NumberRounder.swift */; };
 		8B6EA6402CB6998500C29A95 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6EA63F2CB6998500C29A95 /* Order.swift */; };
@@ -63,6 +64,7 @@
 		63BB1EAA2C8B48DD008C3D20 /* History Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History Screen.swift"; sourceTree = "<group>"; };
 		63BB1EAE2C8B4902008C3D20 /* Exchange Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exchange Screen.swift"; sourceTree = "<group>"; };
 		63CEF5002CA4232F005DA87C /* API .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API .swift"; sourceTree = "<group>"; };
+		8B12EB752CF0F7E500E068AB /* Haptic Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Haptic Feedback.swift"; sourceTree = "<group>"; };
 		8B5A8F952CDB96C3000ACB32 /* StockFinancialData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockFinancialData.swift; sourceTree = "<group>"; };
 		8B6440DD2CB02FA40074F876 /* NumberRounder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberRounder.swift; sourceTree = "<group>"; };
 		8B6EA63F2CB6998500C29A95 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
@@ -122,9 +124,9 @@
 			children = (
 				63BB1E792C8B3BBC008C3D20 /* TradleApp.swift */,
 				63BB1E7B2C8B3BBC008C3D20 /* ContentView.swift */,
+				8B6440E12CB036890074F876 /* Home  */,
 				8B6C32AA2CC2BB4500EBE6F4 /* Portfolio */,
 				8B6C32A92CC2BB2C00EBE6F4 /* Exchange */,
-				8B6440E12CB036890074F876 /* Home  */,
 				8B6C32AB2CC2BB8F00EBE6F4 /* History */,
 				8B6C32AC2CC2BBE700EBE6F4 /* API */,
 				8B6C32AD2CC2BC0200EBE6F4 /* Extra */,
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				8B6440DD2CB02FA40074F876 /* NumberRounder.swift */,
+				8B12EB752CF0F7E500E068AB /* Haptic Feedback.swift */,
 			);
 			path = Extra;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				63BB1EAF2C8B4902008C3D20 /* Exchange Screen.swift in Sources */,
 				63CEF5012CA4232F005DA87C /* API .swift in Sources */,
 				8B6440DE2CB02FA40074F876 /* NumberRounder.swift in Sources */,
+				8B12EB762CF0F7E500E068AB /* Haptic Feedback.swift in Sources */,
 				8B8CDBC22CA54F0E00E26220 /* Position.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
