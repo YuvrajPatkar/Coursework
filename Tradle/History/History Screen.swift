@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct History_Screen: View {
+    
+    @State var secret = false
+    
     var body: some View {
-//        Text("𝓯𝓻𝓮𝓪𝓴𝔂 👅👅👅👅")
-//            .font(.system(size: 80, weight: .bold))
-        Text("Hello")
+        VStack{
+            Text("history")
+            
+        }
     }
 }
-
 #Preview {
     History_Screen()
 }
