@@ -8,11 +8,11 @@
 import Foundation
 
 class order {
-    var security: Security
+    var security: SecurityModel
     var orderType: Bool
     var quantity: Double
     
-    init(security: Security, orderType: Bool, quantity: Double) {
+    init(security: SecurityModel, orderType: Bool, quantity: Double) {
         self.security = security
         self.orderType = orderType
         self.quantity = quantity

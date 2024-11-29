@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Security {
+class SecurityModel {
     var stockName: String
     var stockPrice: Double
     

@@ -12,8 +12,6 @@ import SwiftUI
 
 struct Home_Screen: View {
     
-    @State private var PortfolioViewModel = Portfolio.shared
-    
     
     @State var showingNewOrderPage = false
     @State var StockEntered: String = ""
@@ -29,7 +27,7 @@ struct Home_Screen: View {
                 Text("Total Portfolio Value")
                     .font(.system(size: 30, weight: .medium ))
                     
-                Text(String(Portfolio.shared.portfolioValue))
+                Text(String("text"))
                     .font(.system(size:25, weight: .bold))
                     .foregroundColor(Color.green)
                 Spacer()

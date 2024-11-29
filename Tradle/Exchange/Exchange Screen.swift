@@ -42,7 +42,7 @@ struct Exchange_Screen: View {
                     }
                 }
                 ForEach(stocksToDisplay, id: \.self) {
-                    stockSymbol in ExchangeStockBlockView(stockSymbol: stockSymbol)
+                    stockSymbol in SecurityView(stockSymbol: stockSymbol)
                 }
             }
         }

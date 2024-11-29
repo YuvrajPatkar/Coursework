@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct Portfolio_Screen: View {
-        var body: some View {
-            Text("Beta")
+    @State var portfolio = Portfolio()
+    
+    
+    
+    var body: some View {
+        VStack {
+            Text("Hello")
         }
+        
+    }
 }
 
 

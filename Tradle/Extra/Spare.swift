@@ -1,4 +1,13 @@
 //
+//  Spare.swift
+//  Tradle
+//
+//  Created by Yuvraj Rahul Patkar on 28/11/2024.
+//
+
+import Foundation
+
+//
 //  ExchangeStockBlockView.swift
 //  Tradle
 //
