@@ -21,6 +21,7 @@ struct ContentView: View {
                 Portfolio_Screen()
                     .tabItem {
                         Label("Portfolio", systemImage: "toilet")
+                            .foregroundStyle(.orange)
                     }
                 Exchange_Screen()
                     .tabItem {
