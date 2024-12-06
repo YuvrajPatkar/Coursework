@@ -15,7 +15,10 @@ class SecurityModel {
     init(stockName: String, stockPrice: Double) {
         self.stockName = stockName
         self.stockPrice = stockPrice
-    
     }
+                
+    
+    
+    
     
 }

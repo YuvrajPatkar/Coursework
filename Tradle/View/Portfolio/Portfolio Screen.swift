@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct Portfolio_Screen: View {
-    @State var portfolio = Portfolio()
-    
+    @State var portfolioViewModel = PortfolioViewModel.shared
     
     
     var body: some View {

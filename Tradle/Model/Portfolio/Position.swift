@@ -9,14 +9,17 @@ import Foundation
 
 class Position {
     var security: StockFinancialData
+    var size: Double
+    var priceBoughtAt: Double
     
-    var volume: Double
-    var PositionValue: Double {
-        return self.volume * self.security.price    }
     
-    init(security: StockFinancialData, volume: Double) {
+    init(security: StockFinancialData, size: Double, priceBoughtAt: Double) {
         self.security =  security
-        self.volume = volume
+        self.size = size
+        self.priceBoughtAt = priceBoughtAt
         
     }
+    
+    
 }
+
