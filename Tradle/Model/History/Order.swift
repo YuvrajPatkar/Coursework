@@ -11,6 +11,7 @@ class order {
     var security: SecurityModel
     var orderType: Bool
     var quantity: Double
+    var priceBoughtAt: Double
     
     init(security: SecurityModel, orderType: Bool, quantity: Double) {
         self.security = security

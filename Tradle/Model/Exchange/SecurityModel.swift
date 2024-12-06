@@ -8,15 +8,19 @@
 import Foundation
 
 class SecurityModel {
-    var stockName: String
-    var stockPrice: Double
+    var data: StockFinancialData
     
-    
-    init(stockName: String, stockPrice: Double) {
-        self.stockName = stockName
-        self.stockPrice = stockPrice
+    init(securitySymbol: String) {
+        let api = FinancialDataAPI()
+        data = api.getFinancialData(symbol: securitySymbol, completion: <#T##(Bool) -> Void#>)
     }
-                
+        
+        
+        
+        
+        
+    
+    
     
     
     
